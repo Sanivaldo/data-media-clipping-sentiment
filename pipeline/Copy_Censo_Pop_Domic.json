@@ -1,8 +1,0 @@
-{
-	"name": "Copy_Censo_Pop_Domic",
-	"properties": {
-		"annotations": [],
-		"lastPublishTime": "2025-06-13T23:15:50Z"
-	},
-	"type": "Microsoft.DataFactory/factories/pipelines"
-}
