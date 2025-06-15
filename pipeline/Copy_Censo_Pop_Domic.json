@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ds_censo_ibge_raw",
+				"name": "pipe_censo_ibge_raw",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
