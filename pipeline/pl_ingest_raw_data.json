@@ -31,7 +31,10 @@
 				"inputs": [
 					{
 						"referenceName": "ds_censo_ibge_excel_raw",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeUrlPath": "Censos/Censo_Demografico_2022/Resultados_Gerais_e_Primeiros_Resultados/Censo2022_Pop_e_Domic_BR.csv"
+						}
 					}
 				]
 			}
