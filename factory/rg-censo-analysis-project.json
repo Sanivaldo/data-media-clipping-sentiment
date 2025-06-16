@@ -1,9 +1,0 @@
-{
-	"name": "rg-censo-analysis-project",
-	"location": "brazilsouth",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "234bfe1e-5141-4225-bc59-517f2047e48c",
-		"tenantId": "f870f142-3cfe-4d81-9c5a-9e49447b32c8"
-	}
-}
