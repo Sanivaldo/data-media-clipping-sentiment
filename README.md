@@ -1,23 +1,24 @@
 Data Engineer: Azure com Dados Públicos
-Este projeto demonstra uma arquitetura moderna de dados implementada na Microsoft Azure para ingestão, processamento e análise de dados públicos brasileiros, com ênfase em relevância social, escalabilidade e boas práticas de engenharia de dados.
 
-🎯 Objetivo
-Desenvolver uma solução ponta a ponta capaz de ingerir, transformar e disponibilizar dados públicos de forma automatizada e segura, com visualização interativa via Power BI.
+Este repositório apresenta uma arquitetura moderna de dados construída com serviços da Microsoft Azure, voltada para ingestão, processamento e análise de dados públicos com relevância social. A solução foi projetada com foco em escalabilidade, modularidade e boas práticas de governança.
 
-🔧 Arquitetura Técnica
-Ingestão: arquivos públicos em formatos como CSV, XLSX e JSON armazenados no Azure Data Lake Storage (camada raw).
+Objetivo
+Desenvolver uma pipeline completa e automatizada para ingestão e transformação de dados públicos brasileiros, com exposição de resultados analíticos por meio de dashboards interativos no Power BI.
 
-Orquestração: pipelines parametrizados no Azure Data Factory.
+Arquitetura
+Ingestão: arquivos CSV, XLSX e JSON armazenados no Azure Data Lake Storage (camada raw).
 
-Transformação: notebooks em PySpark no Azure Databricks organizados em camadas (Bronze → Silver → Gold).
+Orquestração: pipelines no Azure Data Factory com parametrização e triggers.
 
-Armazenamento Analítico: dados tratados persistidos no Azure SQL Database.
+Transformação: notebooks PySpark no Azure Databricks, com dados organizados nas camadas bronze, silver e gold.
 
-Visualização: dashboards dinâmicos e KPIs construídos no Power BI.
+Armazenamento relacional: carga dos dados tratados no Azure SQL Database.
 
-Provisionamento: templates de infraestrutura como código (Bicep/ARM/Terraform).
+Visualização: painéis analíticos criados no Power BI.
 
-🧰 Tecnologias Utilizadas
+Provisionamento: templates de infraestrutura como código utilizando Bicep ou ARM.
+
+Tecnologias
 Azure Data Factory
 
 Azure Databricks
@@ -28,25 +29,41 @@ Azure SQL Database
 
 Power BI
 
-GitHub + GitHub Actions (CI/CD)
+GitHub e GitHub Actions
 
-Infraestrutura como Código (IaC)
+Infraestrutura como Código (Bicep, ARM)
 
-📁 Estrutura do Repositório
+Estrutura do Repositório
+
 bash
-Copy
-Edit
-/data
-  /raw           → Dados brutos
-  /bronze        → Dados com ingestão inicial
-  /silver        → Dados limpos e estruturados
-  /gold          → Dados prontos para análise
 
-/docs            → Documentação e diagramas
-/infrastructure  → Templates de IaC para deploy na Azure
-/notebooks       → Notebooks PySpark (Databricks)
-/pipelines       → Artefatos do ADF (JSON)
-/scripts         → Scripts auxiliares
-README.md        → Visão geral do projeto
-🔒 Segurança
-Este repositório não contém nenhuma credencial sensível em texto plano. Todas as chaves, IDs e segredos apresentados nos exemplos foram alterados ou mascarados por motivos de segurança. Em projetos reais, recomenda-se o uso de Azure Key Vault, secrets do GitHub ou variáveis de ambiente.
+Copy
+
+Edit
+
+/data
+
+  /raw           - Dados brutos
+  
+  /bronze        - Dados com ingestão inicial
+  
+  /silver        - Dados limpos e estruturados
+  
+  /gold          - Dados prontos para análise
+  
+
+/docs            - Documentação e diagramas
+
+/infrastructure  - Templates de IaC para provisionamento
+
+/notebooks       - Notebooks PySpark utilizados no Databricks
+
+/pipelines       - Artefatos JSON exportados do Azure Data Factory
+
+/scripts         - Scripts auxiliares para ingestão e processamento
+
+README.md        - Visão geral do projeto
+
+Observação
+
+Por motivos de segurança, todas as chaves e credenciais nos notebooks e scripts foram substituídas ou omitidas. Em ambientes de produção, recomenda-se o uso de Azure Key Vault, variáveis de ambiente ou secrets seguros para gerenciamento de credenciais.
