@@ -1,4 +1,4 @@
-Data Engineer: Azure com Dados Públicos
+Engenharia de Dados: Azure com Dados Públicos
 
 Este repositório apresenta uma arquitetura moderna de dados construída com serviços da Microsoft Azure, voltada para ingestão, processamento e análise de dados públicos com relevância social. A solução foi projetada com foco em escalabilidade, modularidade e boas práticas de governança.
 
