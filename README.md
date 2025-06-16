@@ -5,7 +5,10 @@ Este repositório apresenta uma arquitetura moderna de dados construída com ser
 Objetivo
 Desenvolver uma pipeline completa e automatizada para ingestão e transformação de dados públicos brasileiros, com exposição de resultados analíticos por meio de dashboards interativos no Power BI.
 
-Arquitetura
+-------------------------------------------------------------------------------------------------------------------
+
+Arquitetura:
+
 Ingestão: arquivos CSV, XLSX e JSON armazenados no Azure Data Lake Storage (camada raw).
 
 Orquestração: pipelines no Azure Data Factory com parametrização e triggers.
@@ -18,7 +21,10 @@ Visualização: painéis analíticos criados no Power BI.
 
 Provisionamento: templates de infraestrutura como código utilizando Bicep ou ARM.
 
-Tecnologias
+-------------------------------------------------------------------------------------------------------------------
+
+Tecnologias usadas:
+
 Azure Data Factory
 
 Azure Databricks
@@ -32,6 +38,8 @@ Power BI
 GitHub e GitHub Actions
 
 Infraestrutura como Código (Bicep, ARM)
+
+-------------------------------------------------------------------------------------------------------------------
 
 Estrutura do Repositório
 
@@ -64,6 +72,8 @@ Edit
 
 README.md        - Visão geral do projeto
 
-Observação
+-------------------------------------------------------------------------------------------------------------------
+
+Segurança:
 
 Por motivos de segurança, todas as chaves e credenciais nos notebooks e scripts foram substituídas ou omitidas. Em ambientes de produção, recomenda-se o uso de Azure Key Vault, variáveis de ambiente ou secrets seguros para gerenciamento de credenciais.
